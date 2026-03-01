@@ -1,0 +1,10 @@
+Run this before building to set java version to 21
+Needs to be run with a powershell as admin
+[Environment]::SetEnvironmentVariable("JAVA_HOME", "C:\java21\graalvm-community-openjdk-21+35.1", "User")
+
+Use these commands below to confirm the version
+$env:JAVA_HOME
+java -version
+
+use this command below to set java version for just this session
+$env:JAVA_HOME = "C:\java21\graalvm-community-openjdk-21+35.1"

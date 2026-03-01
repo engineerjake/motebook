@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "motebook",
+  "version": "1.0.0",
+  "name": "Player Book",
+  "description": "Right-click a player with a Book and Quill to record their username.",
+  "authors": ["You"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.motebook.MoteBookMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.8"
+  }
+}
