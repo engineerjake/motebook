@@ -8,3 +8,11 @@ java -version
 
 use this command below to set java version for just this session
 $env:JAVA_HOME = "C:\java21\graalvm-community-openjdk-21+35.1"
+
+
+Build the Image: 
+docker build -t fabric-mod-builder .
+
+Run the Build: 
+docker run --rm -v $(pwd):/build fabric-mod-builder
+

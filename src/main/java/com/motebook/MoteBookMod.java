@@ -8,9 +8,10 @@ import net.minecraft.item.Items;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
-import net.minecraft.world.World;
 
 public class MoteBookMod implements ModInitializer {
+
+    private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger("motebook");
 
     @Override
     public void onInitialize() {
@@ -38,6 +39,4 @@ public class MoteBookMod implements ModInitializer {
         
         LOGGER.info("Mote Book Mod initialized!");
     }
-    
-    private static final org.slf4j.Logger LOGGER = org.slf4j.LoggerFactory.getLogger("motebook");
 }
