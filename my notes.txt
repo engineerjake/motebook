@@ -13,6 +13,5 @@ $env:JAVA_HOME = "C:\java21\graalvm-community-openjdk-21+35.1"
 Build the Image: 
 docker build -t fabric-mod-builder .
 
-Run the Build: 
-docker run --rm -v $(pwd):/build fabric-mod-builder
-
+Run the Build to get the jars:
+docker run --rm -v "${PWD}/build/libs:/build/build/libs" fabric-mod-builder
